@@ -1,0 +1,18 @@
+.btn-app {
+  margin: 0.5em auto;
+  width: 40%;
+  color: rgb(41, 41, 41);
+  background-color: rgb(233, 233, 233);
+  border: 2px;
+
+  &:hover {
+    color: rgb(41, 41, 41);
+    background-color: rgb(190, 190, 190);
+  }
+}
+
+.btn-pocketsize.btn-primary {
+  width: 25%;
+  font-size: 0.8em;
+  font-weight: 600;
+}

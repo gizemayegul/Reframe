@@ -1,0 +1,131 @@
+.account-h1 {
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+.account-text p {
+  position: fixed;
+  margin-top: 10em;
+  margin-left: 2.5em;
+  max-width: 70%;
+  text-align: left;
+  font-family: Nunito Sans;
+}
+
+.account-title h1 {
+  position: fixed;
+  margin-top: 4em;
+  margin-left: 1.5em;
+  font-weight: 700;
+}
+.account-h1 h1 {
+  font-size: 2em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.account-form {
+  position: fixed;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.account-form > * {
+  margin: 0.5em auto;
+}
+
+.custom-button {
+  width: 50%;
+}
+
+.btn-delete-user {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-logout-user {
+  position: fixed;
+  top: 3%;
+  left: 90%;
+  transform: translateX(-50%);
+  scale: 130%;
+}
+
+.btn-logout-user {
+  margin-top: 1.1em;
+  margin-right: 0.2em;
+}
+
+a.btn.btn-primary {
+  left: 90%;
+}
+
+a.btn.btn-primary p {
+  font-size: 12px;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  margin-left: 0.2em;
+  color: #ea868f;
+}
+
+button.btn.btn-primary {
+  margin-left: 81%;
+}
+
+button#goBack.btn.btn-primary {
+  margin-left: 0;
+}
+
+.account-form .error-message {
+  border-radius: 8px;
+  border: 1px solid var(--red-300, #ea868f);
+  background: #f8e2e4;
+  margin-top: 0px;
+  color: #b02a37;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 60px;
+  white-space: pre-line;
+}
+
+.account-form .error-message p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.account-form .success-message {
+  border-radius: 8px;
+  border: 1px solid #293a0f;
+  background: #293a0f;
+  margin-top: 0px;
+  color: white;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 60px;
+  white-space: pre-line;
+}
+
+.account-form .success-message p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.logo-animation-account {
+  position: fixed;
+  width: 220px;
+  top: -9.5%;
+  left: -22%;
+}

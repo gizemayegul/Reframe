@@ -1,0 +1,39 @@
+.inner-support .div-wrapper {
+  position: fixed;
+  left: 2rem;
+  right: 2rem;
+  top: 8rem;
+  text-align: left;
+  height: calc(100vh - 11em);
+  overflow-y: auto;
+}
+
+.inner-support .insights-star {
+  position: absolute;
+  top: 6.5%;
+  left: 4%;
+}
+
+.inner-support .div-wrapper h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.inner-support .div-wrapper p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.inner-support .div-wrapper p a.text-link {
+  color: #76806f;
+  text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+input.form-control {
+  border-color: rgba(0, 123, 255, 0);
+}
+
+label::after {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+input.form-control:focus {
+  border-color: rgba(0, 123, 255, 0);
+  border-bottom-color: #76806f;
+  border-bottom-width: 4px;
+  box-shadow: none;
+}

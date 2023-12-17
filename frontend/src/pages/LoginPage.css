@@ -1,0 +1,79 @@
+.login-h1 {
+  position: fixed;
+  /* font-family: "Nunito"; */
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.login-h1 h1 {
+  font-size: 36px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 40px;
+  width: 80%;
+}
+
+.login-form {
+  position: fixed;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.login-form > * {
+  margin: 0.5em auto;
+}
+
+.signup-link {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.signup-link p {
+  font-size: 1em;
+  width: 100%;
+  font-family: Nunito Sans;
+}
+
+.signup-link p a {
+  text-decoration: underline;
+  color: #76806f;
+}
+
+.custom-button {
+  width: 100%;
+}
+
+.login-form .login-button-wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form .login-button-wrap .btn-form.btn-primary {
+  position: absolute;
+  right: 0%;
+  text-align: right;
+  margin: 0;
+}
+
+.login-form .error-message {
+  border-radius: 8px;
+  border: 1px solid var(--red-300, #ea868f);
+  background: #f8e2e4;
+  margin-top: 80px;
+  color: #b02a37;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  height: 60px;
+  text-align: left;
+  font-size: 14px;
+}

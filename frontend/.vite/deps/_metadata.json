@@ -1,0 +1,89 @@
+{
+  "hash": "b41e0673",
+  "browserHash": "56de75d8",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "00a7f485",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "3dc6006d",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "e16b43eb",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "b2b6d92a",
+      "needsInterop": false
+    },
+    "react-bootstrap/Button": {
+      "src": "../../node_modules/react-bootstrap/esm/Button.js",
+      "file": "react-bootstrap_Button.js",
+      "fileHash": "3b43795b",
+      "needsInterop": false
+    },
+    "react-bootstrap": {
+      "src": "../../node_modules/react-bootstrap/esm/index.js",
+      "file": "react-bootstrap.js",
+      "fileHash": "2ee10308",
+      "needsInterop": false
+    },
+    "react-bootstrap/Modal": {
+      "src": "../../node_modules/react-bootstrap/esm/Modal.js",
+      "file": "react-bootstrap_Modal.js",
+      "fileHash": "7697faa4",
+      "needsInterop": false
+    },
+    "react-bootstrap/Form": {
+      "src": "../../node_modules/react-bootstrap/esm/Form.js",
+      "file": "react-bootstrap_Form.js",
+      "fileHash": "9fd7c285",
+      "needsInterop": false
+    },
+    "react-bootstrap/FloatingLabel": {
+      "src": "../../node_modules/react-bootstrap/esm/FloatingLabel.js",
+      "file": "react-bootstrap_FloatingLabel.js",
+      "fileHash": "b2408c81",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-GGSAQ2Q2": {
+      "file": "chunk-GGSAQ2Q2.js"
+    },
+    "chunk-MTMBTM7Z": {
+      "file": "chunk-MTMBTM7Z.js"
+    },
+    "chunk-PXJLUKTU": {
+      "file": "chunk-PXJLUKTU.js"
+    },
+    "chunk-OMLSH3QZ": {
+      "file": "chunk-OMLSH3QZ.js"
+    },
+    "chunk-OVATDZWT": {
+      "file": "chunk-OVATDZWT.js"
+    },
+    "chunk-34BKBSNK": {
+      "file": "chunk-34BKBSNK.js"
+    },
+    "chunk-KR3LHKFD": {
+      "file": "chunk-KR3LHKFD.js"
+    },
+    "chunk-FQO5W7GE": {
+      "file": "chunk-FQO5W7GE.js"
+    },
+    "chunk-ZS7NZCD4": {
+      "file": "chunk-ZS7NZCD4.js"
+    }
+  }
+}

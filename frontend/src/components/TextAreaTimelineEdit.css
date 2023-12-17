@@ -1,0 +1,57 @@
+.textarea-wrapper-timeline {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 70vw;
+  text-align: left;
+  /* position: relative; */
+}
+
+
+/* .textarea-wrapper p {
+  text-align: left;
+} */
+
+.textarea-wrapper-timeline .btn-textarea-save {
+position: absolute;
+top: -4.3em;
+right: 2.5em;
+}
+
+
+.form-control.textarea {
+  border: none;
+  border-bottom: 0.5px solid transparent;
+  outline: none;
+  /* resize: none; */
+  overflow: auto;
+  background-color: transparent;
+  height: 65vh;
+  padding: 1em;
+  /* margin-top: 0.5em; */
+  /* background-color: #E9FC9C; */
+  /* backdrop-filter: blur(100px); */
+  /* background-color: rgba(233, 252, 156, 0.8); */
+}
+
+.form-control.textarea:focus {
+  background-color: white;
+  box-shadow: none;
+  border-color: #E9FC9C;
+  border-width: 6px;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.textarea-wrapper .textarea-date{
+  text-align: left;
+}
+
+.textarea-date{
+  margin-bottom: 0.8em;
+}

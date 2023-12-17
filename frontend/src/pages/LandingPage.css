@@ -1,0 +1,68 @@
+.landing-page-h1 {
+  position: fixed;
+  left: 22%;
+  top: 24.5%;
+  width: 230px;
+}
+
+.landing-page-h1 h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: Unbounded;
+  text-transform: uppercase;
+  color: #e8ff88;
+  text-align: right;
+}
+
+.landing-page-h4 {
+  position: fixed;
+  left: 28%;
+  top: 53%;
+  width: 60%;
+}
+.landing-page-h4 h4 {
+  text-align: right;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #293a0f;
+}
+
+.landing-page-btn {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  top: 75%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page-btn > * {
+  width: 80%;
+}
+
+.landing-page-btn .btn-form.btn.btn-primary.btn-lg {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-right: 45px;
+  padding: 0;
+}
+
+.nature-logo {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+}
+
+.logo-animation {
+  position: fixed;
+  width: 100px;
+  top: 6.5%;
+  left: 15.5%;
+}

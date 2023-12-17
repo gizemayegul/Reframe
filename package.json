@@ -1,0 +1,28 @@
+{
+  "name": "mm-l",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fullstack": "concurrently --kill-others \"npm --prefix ./backend run dev\" \"npm --prefix frontend run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avaiva/mm-l.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avaiva/mm-l/issues"
+  },
+  "homepage": "https://github.com/avaiva/mm-l#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "jwt-decode": "^4.0.0",
+    "lottie-react": "^2.4.0",
+    "react-jwt": "^1.2.0",
+    "react-router-dom": "^6.20.1"
+  }
+}
