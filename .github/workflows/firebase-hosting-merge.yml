@@ -15,6 +15,8 @@ jobs:
         working-directory: ./frontend
         run: 'npm ci && VITE_SERVER_URL=https://reframe.adaptable.app npm run build'
       - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Deploy to Firebase
+        working-directory: ./frontend
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REFRAME_4030C }}'
