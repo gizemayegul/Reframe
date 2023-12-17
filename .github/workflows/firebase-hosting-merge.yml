@@ -20,5 +20,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REFRAME_4030C }}'
           channelId: live
           projectId: reframe-4030c
-          entrypoint: /frontend
+          entrypoint: ./frontend
           
