@@ -265,7 +265,7 @@ export default function TodayPage() {
             </div>
             <div
               style={{
-                width: "13rem",
+                width: "15rem",
                 textAlign: "left",
                 height: "120px",
                 position: "fixed",

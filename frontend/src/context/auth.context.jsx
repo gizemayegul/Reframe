@@ -56,34 +56,20 @@ function AuthProviderWrapper(props) {
     authenticateUser();
   }, []);
 
-
   const currentDate = new Date();
   const formattedDate = currentDate.toISOString().split("T")[0];
+
   useEffect(() => {
-    const getApi = async () => {
-      const options = {
-        method: 'GET',
-        url: 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote',
-        params: {
-          token: 'ipworld.info'
-        },
-        headers: {
-          'X-RapidAPI-Key': 'e01bb5815fmsh79bcea88d9e0940p17b40bjsnc626c53007fe',
-          'X-RapidAPI-Host': 'quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com'
-        }
-      };
+    const getQuote = async () => {
       try {
-        const response = await axios.request(options);
-        setQuote(response.data.text);
-        console.log(response.data.text);
-      } catch (error) {
-        console.error(error);
+        const response = await axios.get(`${API_URL}/api/quotes`);
+        setQuote(response.data.quote);
+      } catch (err) {
+        console.log(err);
       }
     };
-
-    getApi();
+    getQuote();
   }, [formattedDate]);
-
   return (
     <AuthContext.Provider
       value={{
