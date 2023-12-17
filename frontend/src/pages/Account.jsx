@@ -22,6 +22,8 @@ export default function AccountPage() {
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
 
+  const API_URL = import.meta.env.VITE_SERVER_URL;
+
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -58,7 +60,7 @@ export default function AccountPage() {
     const getInfo = async () => {
       try {
         const token = localStorage.getItem("token");
-        const userInfo = await axios.get("http://localhost:5005/api/users", {
+        const userInfo = await axios.get(`${API_URL}/api/users`, {
           headers: { Authorization: ` ${token}` },
         });
         console.log(userInfo.data[0].firstName);
@@ -74,7 +76,7 @@ export default function AccountPage() {
   const handleDeleteUser = async () => {
     try {
       const token = localStorage.getItem("token");
-      const apiEndPoint = "http://localhost:5005/api/users";
+      const apiEndPoint = `${API_URL}api/users`;
       const response = await axios.delete(apiEndPoint, {
         headers: { Authorization: ` ${token}` },
       });
@@ -100,7 +102,7 @@ export default function AccountPage() {
       password,
       checkPassword,
     };
-    const apiEndpoint = "http://localhost:5005/api/users";
+    const apiEndpoint = `${API_URL}/api/users`;
     try {
       const token = localStorage.getItem("token");
 

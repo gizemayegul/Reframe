@@ -16,7 +16,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const apiEndpoint = "http://localhost:5005/auth/login";
+  const API_URL = import.meta.env.VITE_SERVER_URL;
   const navigate = useNavigate();
   const { storeToken, authenticateUser } = useContext(AuthContext);
 
@@ -42,7 +42,10 @@ export default function LoginPage() {
     };
 
     try {
-      const response = await axios.post(apiEndpoint, loginUserPayload);
+      const response = await axios.post(
+        `${API_URL}/auth/login`,
+        loginUserPayload
+      );
       setEmail("");
       setPassword("");
       storeToken(response.data.token);

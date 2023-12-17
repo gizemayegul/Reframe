@@ -18,7 +18,7 @@ export default function SignupPage() {
   const [checkPassword, setCheckPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const apiEndpoint = "http://localhost:5005/auth/signup";
+  const API_URL = import.meta.env.VITE_SERVER_URL;
   const { storeToken, authenticateUser } = useContext(AuthContext);
 
   const handleFirstName = (e) => setFirstName(e.target.value);
@@ -47,15 +47,17 @@ export default function SignupPage() {
     };
 
     try {
-      const response = await axios.post(apiEndpoint, newUser)
+      const response = await axios.post(`${API_URL}/auth/signup`, newUser);
       setFirstName("");
-        setEmail("");
-        setPassword("");
-        setCheckPassword("");
-        storeToken(response.data.token);
-        authenticateUser();
-        // navigate("/inner-support");;
-    } catch (err) {setError(err.response.data);}
+      setEmail("");
+      setPassword("");
+      setCheckPassword("");
+      storeToken(response.data.token);
+      authenticateUser();
+      // navigate("/inner-support");;
+    } catch (err) {
+      setError(err.response.data);
+    }
   };
 
   return (
