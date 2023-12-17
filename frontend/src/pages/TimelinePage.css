@@ -1,3 +1,10 @@
 h3 {
-    margin-left: 16px;
+  margin-left: 16px;
+}
+
+.timeline-scrollable {
+  overflow-x: scroll;
+  overscroll-behavior-x: none;
+  height: calc(100vh - 12em);
+  max-width: 100%;
 }

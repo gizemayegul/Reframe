@@ -4,8 +4,8 @@
   right: 2rem;
   top: 8rem;
   text-align: left;
-  height: calc(100vh - 11em);
-  overflow-y: auto;
+  height: calc(100vh - 13em);
+  overflow: scroll;
 }
 
 .inner-support .insights-star {
