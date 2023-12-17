@@ -17,7 +17,7 @@ export default function LandingPage() {
         filter="blur(40px)"
       />
       <div className="nature-logo">
-        <img src="../../public/Landing-nature-blur-background.png" />
+        <img src="./Landing-nature-blur-background.png" />
       </div>
       <div className="logo-animation">
         <Lottie animationData={ReFrameLogo} />

@@ -145,11 +145,7 @@ export default function AccountPage() {
         <p>You can change your credentials here:</p>
       </div>
       <div className="btn-logout-user">
-        <ButtonIcon
-          imgSrc="../../public/logout.svg"
-          onClick={logOutUser}
-          navigate="/"
-        />
+        <ButtonIcon imgSrc="./logout.svg" onClick={logOutUser} navigate="/" />
       </div>
       <div className="account-form">
         <Form>
@@ -198,7 +194,7 @@ export default function AccountPage() {
         <div className="btn-delete-user">
           <ButtonIcon
             onClick={handleDeleteUser}
-            imgSrc="../../public/deleteRed.svg"
+            imgSrc="./deleteRed.svg"
             label=" Delete account"
             navigate="/"
           />

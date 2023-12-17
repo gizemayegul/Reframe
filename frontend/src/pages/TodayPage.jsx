@@ -288,7 +288,7 @@ export default function TodayPage() {
                 onClick={handleGratitudeClick}
                 label="My gratitude "
                 id="gratitude-sun"
-                imgSrc="../../public/sun-gratitude.svg"
+                imgSrc="./sun-gratitude.svg"
               />
             </div>
             <div
@@ -304,7 +304,7 @@ export default function TodayPage() {
                 onClick={handleDiaryClick}
                 label="My moments "
                 id="moments-star"
-                imgSrc="../../public/star-moments.svg"
+                imgSrc="./star-moments.svg"
               />
             </div>
           </div>
@@ -336,10 +336,7 @@ export default function TodayPage() {
               label={"My gratitude"}
               todayData={gratitudeDataBase.gratitudeText}
             >
-              <ButtonIcon
-                onClick={handleEditGratitude}
-                imgSrc="../../public/edit.svg"
-              />
+              <ButtonIcon onClick={handleEditGratitude} imgSrc="./edit.svg" />
             </CardToday>
             <hr />
             <div style={{ marginTop: "2em" }}>
@@ -348,10 +345,7 @@ export default function TodayPage() {
                 label={"My moments"}
                 todayData={diaryDataBase.diaryText}
               >
-                <ButtonIcon
-                  onClick={handleEditDiary}
-                  imgSrc="../../public/edit.svg"
-                />
+                <ButtonIcon onClick={handleEditDiary} imgSrc="./edit.svg" />
               </CardToday>
             </div>
           </div>
@@ -400,7 +394,7 @@ export default function TodayPage() {
                   onClick={handleGratitudeClick}
                   label="My gratitude "
                   id="gratitude-sun"
-                  imgSrc="../../public/sun-gratitude.svg"
+                  imgSrc="./sun-gratitude.svg"
                 />
               </div>
             </div>
@@ -413,10 +407,7 @@ export default function TodayPage() {
                 label={"My moments"}
                 todayData={diaryDataBase.diaryText}
               >
-                <ButtonIcon
-                  onClick={handleDiaryClick}
-                  imgSrc="../../public/edit.svg"
-                />
+                <ButtonIcon onClick={handleDiaryClick} imgSrc="./edit.svg" />
               </CardToday>
             </div>
           </div>
@@ -457,10 +448,7 @@ export default function TodayPage() {
                 label={"My gratitude"}
                 todayData={gratitudeDataBase.gratitudeText}
               >
-                <ButtonIcon
-                  onClick={handleEditGratitude}
-                  imgSrc="../../public/edit.svg"
-                />
+                <ButtonIcon onClick={handleEditGratitude} imgSrc="./edit.svg" />
               </CardToday>
             </div>
             <hr />
@@ -485,7 +473,7 @@ export default function TodayPage() {
                   onClick={handleDiaryClick}
                   label="My moments "
                   id="moments-star"
-                  imgSrc="../../public/star-moments.svg"
+                  imgSrc="./star-moments.svg"
                 />
               </div>
             </div>
@@ -563,23 +551,23 @@ export default function TodayPage() {
               // minWidth: "80vw"
             }}
           >
-          <TextArea
-            name={"My Diary"}
-            label={"My moments"}
-            date={formatDate}
-            defaultValue={diaryDataBase.diaryText}
-            placeholder={
-              "| This is your personal diary. Take a few breaths and reflect on everything that happened today. Think of any moments or events that felt meaningful to you, no matter how big or small, and write them down. You can edit your moments at any time."
-            }
-            onSubmit={handleSaveDiary}
-            onChange={(e) => {
-              console.log(e.target.value);
-              return setDiaryDataBase((prev) => ({
-                ...prev,
-                diaryText: e.target.value,
-              }));
-            }}
-          />
+            <TextArea
+              name={"My Diary"}
+              label={"My moments"}
+              date={formatDate}
+              defaultValue={diaryDataBase.diaryText}
+              placeholder={
+                "| This is your personal diary. Take a few breaths and reflect on everything that happened today. Think of any moments or events that felt meaningful to you, no matter how big or small, and write them down. You can edit your moments at any time."
+              }
+              onSubmit={handleSaveDiary}
+              onChange={(e) => {
+                console.log(e.target.value);
+                return setDiaryDataBase((prev) => ({
+                  ...prev,
+                  diaryText: e.target.value,
+                }));
+              }}
+            />
           </div>
         </div>
       )}

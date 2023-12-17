@@ -12,11 +12,7 @@ export default function BackNav() {
 
   return (
     <>
-      <ButtonIcon
-        id="goBack"
-        imgSrc="../../public/goBack.svg"
-        onClick={handleGoBack}
-      />
+      <ButtonIcon id="goBack" imgSrc="./goBack.svg" onClick={handleGoBack} />
     </>
   );
 }

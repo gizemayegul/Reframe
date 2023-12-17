@@ -28,7 +28,7 @@ export default function Avatar({ name, scale, onClick }) {
             style={{
               height: calculateSize(240, scale),
               width: calculateSize(240, scale),
-              backgroundImage: `url(${"../../public/Avatar-Icon.svg"})`,
+              backgroundImage: `url(${"./Avatar-Icon.svg"})`,
               backgroundSize: "100% 100%",
               position: "relative",
             }}

@@ -14,7 +14,7 @@ export default function InnerSupportPage() {
           filter="blur(40px)"
           zIndex="-1"
         />
-        <img src="../../public/insights-star.svg" className="insights-star" />
+        <img src="./insights-star.svg" className="insights-star" />
         <div className="div-wrapper">
           <h1>How to reframe your inner voices</h1>
           <p>
