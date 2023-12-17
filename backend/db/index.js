@@ -1,8 +1,6 @@
 // ℹ️ package responsible to make the connection with mongodb
 // https://www.npmjs.com/package/mongoose
 const mongoose = require("mongoose");
-const Quote = require("../models/Quote.model");
-const jsonFile = require("../quote.json");
 
 // ℹ️ Sets the MongoDB URI for our app to have access to it.
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
@@ -14,9 +12,6 @@ mongoose
   .connect(MONGO_URI)
   .then((x) => {
     const dbName = x.connections[0].name;
-    Quote.insertMany(jsonFile.quotes).then(() => {
-      console.log("inserted");
-    });
     console.log(`Connected to Mongo! Database name: "${dbName}"`);
   })
   .catch((err) => {

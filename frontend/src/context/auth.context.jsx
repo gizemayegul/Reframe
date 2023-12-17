@@ -58,6 +58,7 @@ function AuthProviderWrapper(props) {
 
   const currentDate = new Date();
   const formattedDate = currentDate.toISOString().split("T")[0];
+  console.log(formattedDate);
 
   useEffect(() => {
     const getQuote = async () => {
@@ -69,7 +70,7 @@ function AuthProviderWrapper(props) {
       }
     };
     getQuote();
-  }, [formattedDate]);
+  }, []);
   return (
     <AuthContext.Provider
       value={{
