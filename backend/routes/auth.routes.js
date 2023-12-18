@@ -38,9 +38,8 @@ authRouter.post("/signup", async (req, res, next) => {
       expiresIn: "6h",
     });
 
-    console.log("This is the token",token)
+    console.log("This is the token", token);
     res.status(200).json({ token: token, payload: payload });
-    
   } catch (err) {
     console.log(err);
   }
@@ -70,7 +69,7 @@ authRouter.post("/login", async (req, res, next) => {
 
     const { password: userPassword, __v, ...payload } = findUser.toObject();
     const token = jwt.sign(payload, process.env.JWT_SECRET, {
-      expiresIn: "6h",
+      expiresIn: "365d",
     });
     res.status(200).json({ token: token, payload: payload });
 
