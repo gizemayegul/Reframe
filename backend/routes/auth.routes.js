@@ -79,8 +79,23 @@ authRouter.post("/login", async (req, res, next) => {
   }
 });
 
+authRouter.delete("/user/delete", isAuthenticated, async (req, res, next) => {
+  const { _id } = req.user;
+  console.log(req.user._id, "am I id");
+  try {
+    const response = await User.findByIdAndDelete(_id);
+    console.log(response, "response");
+    if (response) {
+      res.status(200).json("User deleted successfully");
+    } else {
+      res.status(404).json("User not found");
+    }
+  } catch (err) {
+    console.error(`Error deleting user with ID: ${_id}`, err);
+    res.status(500).json("Internal server error");
+  }
+});
 authRouter.get("/verify", (req, res, next) => {
-  console.log("Request headers:", req.headers);
   console.log(`req.payload`, req.payload);
   res.status(200).json(req.payload);
 });
