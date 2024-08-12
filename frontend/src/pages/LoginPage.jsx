@@ -53,6 +53,7 @@ export default function LoginPage() {
       navigate("/today");
     } catch (err) {
       setError(err.response.data);
+      navigate("/login");
     }
   };
 
