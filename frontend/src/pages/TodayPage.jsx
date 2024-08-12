@@ -509,7 +509,6 @@ export default function TodayPage() {
                 "| This is your personal Gratitude. Take a few breaths and reflect on everything that happened today. Think of any moments or events that felt meaningful to you, no matter how big or small, and write them down. You can edit your moments at any time."
               }
               onChange={(e) => {
-                console.log(e.target.value);
                 return setGratitudeDataBase((prev) => ({
                   ...prev,
                   gratitudeText: e.target.value,
@@ -561,7 +560,6 @@ export default function TodayPage() {
               }
               onSubmit={handleSaveDiary}
               onChange={(e) => {
-                console.log(e.target.value);
                 return setDiaryDataBase((prev) => ({
                   ...prev,
                   diaryText: e.target.value,

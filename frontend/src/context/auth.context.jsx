@@ -1,4 +1,3 @@
-import { Navigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 const API_URL = import.meta.env.VITE_SERVER_URL;
@@ -49,7 +48,6 @@ function AuthProviderWrapper(props) {
   const logOutUser = () => {
     removeToken();
     authenticateUser();
-    return <Navigate to="/login" />;
   };
 
   useEffect(() => {

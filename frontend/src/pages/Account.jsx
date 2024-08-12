@@ -76,7 +76,7 @@ export default function AccountPage() {
   const handleDeleteUser = async () => {
     try {
       const token = localStorage.getItem("token");
-      const apiEndPoint = `${API_URL}api/users`;
+      const apiEndPoint = `${API_URL}/auth/user/delete`;
       const response = await axios.delete(apiEndPoint, {
         headers: { Authorization: ` ${token}` },
       });
@@ -84,7 +84,6 @@ export default function AccountPage() {
       if (response.status === 200) {
         console.log("User deleted successfully");
         logOutUser();
-        navigate("/");
       } else {
         setError("Failed to delete user");
       }
@@ -196,7 +195,6 @@ export default function AccountPage() {
             onClick={handleDeleteUser}
             imgSrc="./deleteRed.svg"
             label=" Delete account"
-            navigate="/"
           />
         </div>
       </div>
